@@ -6,4 +6,9 @@
     </style>
 
     <style name="Theme.YmniDom" parent="Base.Theme.YmniDom" />
+    <style name="Theme.PROJECTNAME" parent="Theme.AppCompat.Light.NoActionBar"/>
+    <style name="NotCapsButton" parent="Widget.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
 </resources>

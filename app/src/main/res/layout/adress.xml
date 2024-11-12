@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/button_black"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:text="Добавить адрес"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавьте адрес своего дома в формате\nг. Название города, ул. Название улицы, д. \nНомер дома"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="150dp"/>
+
+    <EditText
+        android:id="@+id/addressInput"
+        android:layout_width="400dp"
+        android:layout_height="55dp"
+        android:hint="Адрес"
+        android:textColor="#94949B"
+        android:background="@drawable/adress"
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:inputType="text"
+        android:layout_marginTop="32dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveButton"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_marginTop="170dp"
+        android:textSize="23sp"
+        android:background="@drawable/circleblue"
+        android:textColor="@color/white"
+        android:padding="16dp"/>
+
+
+
+</LinearLayout>
