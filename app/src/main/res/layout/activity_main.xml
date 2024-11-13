@@ -92,7 +92,7 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="18sp"
-        android:Cornerradius="50dp"/>
+       />
 
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="274dp"
