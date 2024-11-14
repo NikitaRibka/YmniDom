@@ -12,6 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.YmniDom"
         tools:targetApi="31">
+
+        <activity android:name=".MainActivityRegister"
+            android:exported="true">
+        </activity>
+        <activity android:name=".PineCode"
+            android:exported="true">
+        </activity>
+        <activity android:name=".PineCodeCreate"
+            android:exported="true">
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
