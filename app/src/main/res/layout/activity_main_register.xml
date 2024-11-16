@@ -42,7 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Имя пользователя"
-            android:textColor="@color/grey"
+            android:textColor="#474444"
             android:textSize="15sp"
             android:textStyle="bold" />
 
@@ -54,8 +54,8 @@
             android:hint="usernametest"
             android:inputType="textEmailAddress"
             android:padding="10dp"
-            android:textColor="#70000000"
-            android:textColorHint="#80504F4F"
+            android:textColor="#9E3C3B3B"
+            android:textColorHint="#59000000"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -63,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Электронная почта"
-            android:textColor="@color/grey"
+            android:textColor="#474444"
             android:textSize="15sp"
             android:textStyle="bold" />
 
@@ -76,7 +76,7 @@
             android:inputType="textEmailAddress"
             android:padding="10dp"
             android:textColor="#70000000"
-            android:textColorHint="#80504F4F"
+            android:textColorHint="#59000000"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -85,7 +85,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Пароль"
-            android:textColor="@color/grey"
+            android:textColor="#474444"
             android:textSize="15sp"
             android:textStyle="bold" />
 
@@ -98,7 +98,7 @@
             android:inputType="numberPassword"
             android:padding="10dp"
             android:textColor="#70000000"
-            android:textColorHint="#80504F4F"
+            android:textColorHint="#59000000"
             android:textSize="16sp"
             android:textStyle="bold" />
 
