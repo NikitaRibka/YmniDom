@@ -25,6 +25,9 @@
         <activity android:name=".Adress"
             android:exported="true">
         </activity>
+        <activity android:name=".FullDom"
+            android:exported="true">
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">

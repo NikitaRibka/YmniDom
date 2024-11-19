@@ -21,14 +21,15 @@ class Adress: AppCompatActivity() {
 
         savebutton.setOnClickListener {
             val text = addressEditText.text.toString()
-            val pattern = Regex("""г\. (\p{L}+), ул\. (\p{L}+), д\. (\d+), кв\. (\d+)""")
-            if (pattern.matches(text))
+            val pattern = Regex("""^.*\s*,\s*ул\.\s*.*\s*,\s*дом\.\s*\d+$""")
+
+           if (pattern.matches(text))
             {
                 Toast.makeText(this, "Адрес корректен", Toast.LENGTH_SHORT).show()
             }
             else
             {
-                Toast.makeText(this, "Некорректный формат адреса.  Пример: г. Москва, ул. Ленина, д. 1, кв. 10", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Некорректный формат адреса.  Пример: Москва, ул Ленина, дом 1, 10", Toast.LENGTH_LONG).show()
             }
             }
         }

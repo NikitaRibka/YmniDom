@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
 
         registerButton.setOnClickListener {
             // Создание Intent для запуска нового Activity
-            val intent = Intent(this, MainActivityRegister::class.java)
+            val intent = Intent(this, FullDom::class.java)
 
             // Запуск нового Activity
             startActivity(intent)
