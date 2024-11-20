@@ -54,10 +54,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         registerButton.setOnClickListener {
-            // Создание Intent для запуска нового Activity
-            val intent = Intent(this, FullDom::class.java)
 
-            // Запуск нового Activity
+            val intent = Intent(this, FullDom::class.java)
             startActivity(intent)
         }
     }

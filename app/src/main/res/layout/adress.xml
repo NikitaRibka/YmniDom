@@ -45,6 +45,7 @@
 
     <Button
         android:id="@+id/saveButton"
+        android:onClick="Save"
         android:layout_width="270dp"
         android:layout_height="wrap_content"
         android:text="Сохранить"

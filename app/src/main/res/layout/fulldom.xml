@@ -29,6 +29,7 @@
                 android:textStyle="bold" />
 
             <ImageView
+                android:id="@+id/setting"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginTop="5dp"
@@ -100,6 +101,11 @@
                 />
         </LinearLayout>
     </HorizontalScrollView>
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 
 
