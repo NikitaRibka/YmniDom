@@ -28,6 +28,18 @@
         <activity android:name=".FullDom"
             android:exported="true">
         </activity>
+        <activity android:name=".Profile"
+            android:exported="true">
+        </activity>
+        <activity android:name=".AddKomnata"
+            android:exported="true">
+        </activity>
+        <activity android:name=".AddPolzovati"
+            android:exported="true">
+        </activity>
+        <activity android:name=".AddYstroistva"
+            android:exported="true">
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">

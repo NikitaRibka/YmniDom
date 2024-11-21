@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity() {
             val email = emailEditText.text.toString()
             val password = passwordEditText.text.toString()
 
-            // Проверка полей на пустоту
             if (email.isEmpty() || password.isEmpty()) {
                 Toast.makeText(this, "Есть пустые поля", Toast.LENGTH_SHORT).show()
 

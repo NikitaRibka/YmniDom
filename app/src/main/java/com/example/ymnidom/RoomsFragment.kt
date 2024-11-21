@@ -21,13 +21,13 @@ class RoomsFragment : Fragment()  {
 
         val buttonroom = view.findViewById<ImageView>(R.id.plusroom)
 
-        val datasetUsers = arrayOf("Ванная", "Дочь", "Кухня", "Дочь", "Дочь", "Дочь",)
-        val datasetUsersType = arrayOf(1, 2, 3, 4, 5, 6)
-        val roomAdapter = UsersAdapter(datasetUsers, datasetUsersType)
+        val datasetRooms = arrayOf("Ванная", "Дочь", "Кухня")
+        val datasetRoomsType = arrayOf(1, 2, 3, 4, 5, 6)
+        val roomAdapter = RoomAdapter(datasetRooms, datasetRoomsType)
 
-        val recyclerViewUsers: RecyclerView = view.findViewById(R.id.recyclerRoom)
-        recyclerViewUsers.layoutManager = LinearLayoutManager(requireContext())
-        recyclerViewUsers.adapter = roomAdapter
+        val recyclerViewRooms: RecyclerView = view.findViewById(R.id.recyclerRoom)
+        recyclerViewRooms.layoutManager = LinearLayoutManager(requireContext())
+        recyclerViewRooms.adapter = roomAdapter
 
         buttonroom.setOnClickListener {
             val intent = Intent(requireContext(), AddKomnata::class.java)

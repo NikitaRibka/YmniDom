@@ -44,9 +44,9 @@ class FullDom : AppCompatActivity() {
         }
     }
 
-    private fun switchFragment(fragment: Any) {
+    private fun switchFragment(fragment: Fragment) {
         val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.fragmentContainer, fragment as Fragment)
+        transaction.replace(R.id.fragmentContainer, fragment)
         transaction.commit()
     }
 

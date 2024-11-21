@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="280dp"
         android:background="@color/button_black"
         android:gravity="center_horizontal"
         android:orientation="vertical">
@@ -19,6 +19,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/back_user"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginTop="5dp"
@@ -26,17 +27,17 @@
                 android:src="@drawable/nazad"
                 android:padding="5dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="80dp"
-            android:text="Профиль"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="80dp"
+                android:text="Профиль"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
-    </LinearLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,7 +49,7 @@
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:src="@drawable/smile"
                 android:padding="5dp"/>
 
@@ -59,7 +60,7 @@
     <LinearLayout
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:orientation="vertical"
         android:padding="20dp"
         >
@@ -109,27 +110,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Адресс"
-            android:textColor="@color/grey"
-            android:textSize="14sp"
-            android:textStyle="bold" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="-10dp"
-            android:hint="г.Омск ул. Ленина, д. 24"
-            android:inputType="textPassword"
-            android:padding="10dp"
-            android:textColor="#000000"
-            android:textColorHint="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:text="Пароль"
             android:textColor="@color/grey"
             android:textSize="14sp"
@@ -152,13 +132,13 @@
 
 
     <Button
-        android:id="@+id/saveButton"
+        android:id="@+id/saveButton_user"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:text="Сохранить"
         android:textAllCaps="false"
         android:textStyle="bold"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:textSize="18sp"
         android:background="@drawable/circleblue"
         android:textColor="@color/white"
@@ -168,7 +148,7 @@
         android:id="@+id/hz"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:text="Выйти"
+        android:text="Удалить"
         android:textAllCaps="false"
         android:textStyle="bold"
         android:layout_marginTop="20dp"

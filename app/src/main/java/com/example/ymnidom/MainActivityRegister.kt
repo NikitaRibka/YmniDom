@@ -48,13 +48,8 @@ class MainActivityRegister : AppCompatActivity() {
             }
 
             else {
-                // Проверка прошла успешно, переход на следующий экран
                 Toast.makeText(this, "Проверка прошла успешно", Toast.LENGTH_SHORT).show()
-
-                // Создание Intent для запуска нового Activity
                 val intent = Intent(this, PineCodeCreate::class.java)
-
-                // Запуск нового Activity
                 startActivity(intent)
             }
 

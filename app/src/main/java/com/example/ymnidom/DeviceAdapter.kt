@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.core.graphics.drawable.toDrawable
 import androidx.recyclerview.widget.RecyclerView
 
-class UsersAdapter (private val data: Array<String>, private val typeData:Array<Int>) : RecyclerView.Adapter<UsersAdapter.ViewHolder>() {
+class DeviceAdapter (private val data: Array<String>, private val typeData:Array<Int>) : RecyclerView.Adapter<DeviceAdapter.ViewHolder>() {
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
         var TitleText: TextView?
@@ -44,10 +44,12 @@ class UsersAdapter (private val data: Array<String>, private val typeData:Array<
         holder.TitleText?.setText(TitleText)
 
         when (Type) {
-            1 -> holder.Image?.setImageResource(R.drawable.users_cowboy)
-            2 -> holder.Image?.setImageResource(R.drawable.users_music)
-            3 -> holder.Image?.setImageResource(R.drawable.users_cowboy)
-
+            1 -> holder.Image?.setImageDrawable(R.drawable.nazad.toDrawable())
+            2 -> holder.Image?.setImageDrawable(R.drawable.logo.toDrawable())
+            3 -> holder.Image?.setImageDrawable(R.drawable.pinactive.toDrawable())
+            4 -> holder.Image?.setImageDrawable(R.drawable.settings.toDrawable())
+            5 -> holder.Image?.setImageDrawable(R.drawable.smile.toDrawable())
+            6 -> holder.Image?.setImageDrawable(R.drawable.pinnoractive.toDrawable())
             else -> {
                 Log.e("ERROR", "Room image type is missing!")
             }

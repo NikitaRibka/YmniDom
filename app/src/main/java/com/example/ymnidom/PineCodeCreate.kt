@@ -34,6 +34,19 @@ class PineCodeCreate: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.pinecodecreate)
 
+        button1 = findViewById(R.id.btn1)
+        button2 = findViewById(R.id.btn2)
+        button3 = findViewById(R.id.btn3)
+        button4 = findViewById(R.id.btn4)
+        button5 = findViewById(R.id.btn5)
+        button6 = findViewById(R.id.btn6)
+        button7 = findViewById(R.id.btn7)
+        button8 = findViewById(R.id.btn8)
+        button9 = findViewById(R.id.btn9)
+        imagepin1 = findViewById(R.id.pin1)
+        imagepin2 = findViewById(R.id.pin2)
+        imagepin3 = findViewById(R.id.pin3)
+        imagepin4 = findViewById(R.id.pin4)
 
         var myData = SharedPreferenceHelper.loadData(this)
 
