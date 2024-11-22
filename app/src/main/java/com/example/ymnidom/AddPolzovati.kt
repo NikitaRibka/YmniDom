@@ -16,7 +16,7 @@ class AddPolzovati : AppCompatActivity() {
         setContentView(R.layout.addpolzovati)
 
         backImageView = findViewById(R.id.back_user)
-        saveButton = findViewById(R.id.saveButton_device)
+        saveButton = findViewById(R.id.saveButton_user)
 
         backImageView.setOnClickListener {
             val intent = Intent(this, FullDom::class.java)

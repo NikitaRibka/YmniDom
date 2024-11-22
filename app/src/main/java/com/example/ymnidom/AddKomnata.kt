@@ -31,13 +31,13 @@ class AddKomnata : AppCompatActivity() {
             startActivity(intent)
         }
 
-            /*val datasetAddKomnata = arrayOf("Дааочь", "Дочааь", "Дочааь",  )
+            val datasetAddKomnata = arrayOf("Дааочь", "Дочааь", "Дочааь",  )
             val datasetAddKomnataType = arrayOf(1, 2, 3, 4, 5, 6)
             val addkomnataAdapter = AddKomnataAdapter(datasetAddKomnata, datasetAddKomnataType)
 
             val recyclerViewAddKomnata: RecyclerView = findViewById(R.id.recyclerAddKomnata)
-            recyclerViewAddKomnata.layoutManager = LinearLayoutManager(requireContext())
-            recyclerViewAddKomnata.adapter = addkomnataAdapter*/
+            recyclerViewAddKomnata.layoutManager = LinearLayoutManager(applicationContext)
+            recyclerViewAddKomnata.adapter = addkomnataAdapter
 
     }
 }

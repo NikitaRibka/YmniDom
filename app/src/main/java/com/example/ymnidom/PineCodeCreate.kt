@@ -62,7 +62,7 @@ class PineCodeCreate: AppCompatActivity() {
             }
             if (const == 3) {
                 imagepin4.setImageResource(pin);
-                val intent = Intent(this, Adress::class.java)
+                val intent = Intent(this, PineCode::class.java)
                 startActivity(intent)
             }
            const += 1

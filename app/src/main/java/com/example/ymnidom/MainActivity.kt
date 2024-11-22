@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
 
         registerButton.setOnClickListener {
 
-            val intent = Intent(this, FullDom::class.java)
+            val intent = Intent(this, MainActivityRegister::class.java)
             startActivity(intent)
         }
     }

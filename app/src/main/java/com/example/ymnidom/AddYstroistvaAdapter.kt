@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.core.graphics.drawable.toDrawable
 import androidx.recyclerview.widget.RecyclerView
 
-class AddKomnataAdapter (private val data: Array<String>, private val typeData:Array<Int>) : RecyclerView.Adapter<AddKomnataAdapter.ViewHolder>() {
+class AddYstroistvaAdapter (private val data: Array<String>, private val typeData:Array<Int>) : RecyclerView.Adapter<AddYstroistvaAdapter.ViewHolder>() {
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
         var TitleText: TextView?

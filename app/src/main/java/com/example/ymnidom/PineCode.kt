@@ -1,5 +1,6 @@
 package com.example.ymnidom
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -43,10 +44,22 @@ class PineCode : AppCompatActivity() {
         imagepin4 = findViewById(R.id.pin4)
 
         var myData = SharedPreferenceHelper.loadData(this)
+        val sharedPreferences = getSharedPreferences("my_prefs", Context.MODE_PRIVATE)
+        val savedNumber = sharedPreferences.getInt("my_number", 0)
 
         button1.setOnClickListener {
-            if (const == 0) {
+            if (const == 0)
+            {
+                if (savedNumber == 1)
+            {
                 imagepin1.setImageResource(pin);
+                const += 1
+            }
+            else
+            {
+                imagepin1.setImageResource(nopin);
+            }
+
             }
             if (const == 1) {
                 imagepin2.setImageResource(pin);
@@ -59,9 +72,7 @@ class PineCode : AppCompatActivity() {
                 val intent = Intent(this, Adress::class.java)
                 startActivity(intent)
             }
-            const += 1
-            myData.numbers.add(1)
-            SharedPreferenceHelper.saveData(this, myData)
+            
         }
 
         button2.setOnClickListener {

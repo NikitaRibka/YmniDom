@@ -30,11 +30,11 @@
 
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
         android:layout_marginTop="45dp"
         android:background="@drawable/circlegolo"
         android:elevation="10dp"
         android:orientation="vertical"
+        android:layout_gravity="center"
         android:padding="20dp"
         >
 
