@@ -6,6 +6,13 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
+import io.github.jan.supabase.gotrue.auth
+import io.github.jan.supabase.gotrue.providers.builtin.Email
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.launch
 
 class MainActivityRegister : AppCompatActivity() {
 
@@ -14,6 +21,7 @@ class MainActivityRegister : AppCompatActivity() {
     private lateinit var passwordEditText: EditText
     private lateinit var loginButton: Button
     private lateinit var registerButton: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_register)
@@ -26,8 +34,8 @@ class MainActivityRegister : AppCompatActivity() {
 
         registerButton.setOnClickListener {
             val username = usernameEditText.text.toString()
-            val email = emailEditText.text.toString()
-            val password = passwordEditText.text.toString()
+            var email = emailEditText.text.toString()
+            var password = passwordEditText.text.toString()
 
             // Проверка полей на пустоту
             if (email.isEmpty() || password.isEmpty() || username.isEmpty()) {
@@ -48,10 +56,27 @@ class MainActivityRegister : AppCompatActivity() {
             }
 
             else {
+
                 Toast.makeText(this, "Проверка прошла успешно", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, PineCodeCreate::class.java)
-                startActivity(intent)
+
+                val job = Job()
+                val scope = CoroutineScope(Dispatchers.Main + job)
+                if (job.isActive)
+                {
+                    lifecycleScope.launch {
+                        var supabase = supa.getSB()
+                        val user = supabase.auth.signUpWith(Email) {
+                            email = usernameEditText?.text.toString()
+                            password = passwordEditText?.text.toString()
+                        }
+                    }
             }
+                startActivity(intent)
+                if (!job.isActive)
+                {
+                    job.cancel()
+                }
 
 
         }
